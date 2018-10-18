@@ -1,24 +1,82 @@
 var ui = {};
 
 ui.navigation = `
-    <!-- ------------- YOUR CODE: Navigation UI ------------- --> 
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Welcome!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick = "loadCreateAccount()">Create Account</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" onclick = "loadLogin()">Login</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" onclick = "loadDeposit()">Deposit</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" onclick = "loadWithdraw()">Withdraw</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Welcome to the BadBank</h5>
+    <p class="card-text">Thanks for your Money</p>
+  </div>
+</div> 
 `;
 
 ui.createAccount = `
-    <!-- ------------- YOUR CODE: Create Account UI ------------- --> 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Let's Get Started! Create Account Here</h5>
+    <input type="input" id="addname" placeholder="name">
+        <input type="input" id="addemail" placeholder="email">
+        <input type="input" id="addpassword" placeholder="password">
+   <button type="button" class="btn btn-info" onclick="create()">Create</button>
+    <div id="status"></div> 
+  </div>
+</div>
 `;
 
 ui.login = `
-    <!-- ------------- YOUR CODE: Login UI ------------- --> 
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Welcome Back! Login Here</h5>
+        <input type="input" id="email" placeholder="email">
+        <input type="input" id="password" placeholder="password">
+   <button type="button" class="btn btn-info" onclick="login()">Login</button>
+    <div id="status"></div> 
+  </div>
+</div>
 `;
 
 ui.deposit = `
-    <!-- ------------- YOUR CODE: Deposit UI ------------- --> 
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Deposit Here</h5>
+        <input type="input" id="email" placeholder="email">
+        <input type="input" id="amount" placeholder="amount">
+   <button type="button" class="btn btn-info" onclick="deposit()">Deposit</button>
+    <div id="status"></div> 
+  </div>
+</div>
 `;
 
 ui.withdraw = `
-    <!-- ------------- YOUR CODE: Withdraw UI ------------- --> 
+   <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Withdraw Here</h5>
+        <input type="input" id="email" placeholder="email">
+        <input type="input" id="amount" placeholder="amount">
+   <button type="button" class="btn btn-info" onclick="withdraw()">Deposit</button>
+    <div id="status"></div> 
+  </div>
+</div>
 `;
+
 
 ui.transactions = `
     <!-- ------------- YOUR CODE: Transactions UI ------------- --> 
